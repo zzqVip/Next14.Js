@@ -11,8 +11,7 @@ const theme = createTheme({
 const Btn = () => {
     return <>
         <ThemeProvider theme={theme}>
-            <Link href={"/copyfund/fundlist"}>Primary</Link>
-            {/* <Button >Secondary</Button> */}
+            <Link href={"/copyfund/fundlist"}>首页</Link>
         </ThemeProvider>
 
     </>

@@ -26,7 +26,7 @@ export default function RootLayout({
         <SwitchLangBtn />
         <div>
           <Link href={'/'}>首页</Link>
-          <Link href={'/copyfund/be-a-leader'}>create</Link>
+          <Link href={'/copyfund/be-a-leader'}>Create</Link>
           <Link href={'/copyfund/fundlist'}>fundlist</Link>
         </div>
         <AppRouterCacheProvider>
