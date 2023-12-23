@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next14.js](https://nextjs.org/) project
 
 ## Getting Started
 
@@ -10,6 +10,7 @@ First, run the development server:
 ```
 ## Learn More
 
-Quickly integrate infrastructure
-- [Vercel](https://vercel.com/) - Deploy web projects with the best frontend developer experience and highest end-user performance.
+- [Next14](https://nextjs.org/) - Next.js is a React framework that enables several capabilities such as server-side rendering and generating static websites.
+- [Material UI](https://mui.com/material-ui/getting-started) - Material UI is an open-source React component library that implements Google's Material Design.
+
 
