@@ -1,7 +1,10 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
 import './globals.css'
-
+import styles from './page.module.css'
+import Link from 'next/link';
+import SwitchLangBtn from '@/Components/client/SwitchLangBtn/SwitchLangBtn';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -16,7 +19,25 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div>
+          Header
+        </div>
+        <SwitchLangBtn />
+        <div>
+          <Link href={'/'}>首页</Link>
+          <Link href={'/copyfund/be-a-leader'}>create</Link>
+          <Link href={'/copyfund/fundlist'}>fundlist</Link>
+        </div>
+        <AppRouterCacheProvider>
+          <main className={styles.main}>
+            {children}
+          </main>
+        </AppRouterCacheProvider>
+        <div>
+          Footer
+        </div>
+      </body>
     </html>
   )
 }
