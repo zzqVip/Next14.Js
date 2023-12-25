@@ -1,4 +1,4 @@
-This is a [Next14.js](https://nextjs.org/) project
+This is a [Next14.js](https://nextjs.org/) template project
 
 ## Getting Started
 
