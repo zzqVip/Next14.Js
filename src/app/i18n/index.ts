@@ -8,6 +8,8 @@ export default async function initTranslations(
     namespaces?: string[],
 ) {
     const i18nInstance = createInstance();
+    console.log(locale);
+
     await i18nInstance
         .use(initReactI18next)
         .use(

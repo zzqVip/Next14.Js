@@ -4,6 +4,8 @@ import { NextRequest } from "next/server";
 import i18nConfig from "./src/app/i18n/i18nConfig";
 
 export function middleware(request: NextRequest) {
+    console.log("middleware", request, i18nConfig);
+
     return i18nRouter(request, i18nConfig);
 }
 

@@ -22,6 +22,7 @@ export default function RootLayout({
   children: React.ReactNode,
   params: { locale: string };
 }) {
+  console.log(locale, "rootLayout");
 
   return (
     <html lang={locale} dir={dir(locale)} data-theme='winter'>
@@ -29,11 +30,11 @@ export default function RootLayout({
         <div>
           Header
         </div>
-        <SwitchLangBtn />
+        <SwitchLangBtn locale={locale} />
         <div>
-          <Link href={'/'}>首页</Link>
-          <Link href={'/copyfund/be-a-leader'}>Create</Link>
-          <Link href={'/copyfund/fundlist'}>fundlist</Link>
+          <Link href={'/' + locale} locale={locale}>首页</Link>
+          <Link href={locale + '/copyfund/be-a-leader'}>Create</Link>
+          <Link href={locale + '/copyfund/fundlist'} locale={locale}>fundlist</Link>
         </div>
         <AppRouterCacheProvider>
           <main className={styles.main}>
@@ -44,6 +45,6 @@ export default function RootLayout({
           Footer
         </div>
       </body>
-    </html>
+    </html >
   )
 }

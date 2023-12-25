@@ -1,5 +1,4 @@
 
-import styles from './page.module.css'
 import Btn from '@/Components/client/Button'
 import initTranslations from "../i18n";
 import TranslationsProvider from "@/Components/client/TranslationsProvider/TranslationsProvider";
@@ -11,6 +10,8 @@ export default async function Home(
   }
 ) {
   const { t, options } = await initTranslations(locale);
+  console.log(locale);
+
   return (
     <TranslationsProvider namespaces={options.ns as string[]} locale={locale}>
       <div>
