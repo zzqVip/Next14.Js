@@ -22,6 +22,7 @@ export default function RootLayout({
   children: React.ReactNode,
   params: { locale: string };
 }) {
+
   return (
     <html lang={locale} dir={dir(locale)} data-theme='winter'>
       <body className={inter.className}>

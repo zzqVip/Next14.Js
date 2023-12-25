@@ -17,18 +17,13 @@ export default function TranslationsProvider({
 
 
     useEffect(() => {
-        console.log(locale, namespaces);
         const init = async () => {
             if (!i18n) {
-                console.log('1');
-
                 const newInstance = await initTranslations(locale, namespaces);
                 i18n = newInstance;
                 setInstance(newInstance);
             } else {
-                console.log('2');
                 if (i18n.language !== locale) {
-                    console.log('3');
                     i18n.changeLanguage(locale);
                 }
             }
